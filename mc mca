@@ -1,0 +1,44 @@
+[33mcommit 393f767bea7e86b3752faed32a0299d394c7b6c7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ManvithMaddali <113430983+ManvithMaddali@users.noreply.github.com>
+Date:   Sat Nov 19 09:10:46 2022 +0530
+
+    Added Sniper Method/FUnc
+
+[33mcommit 28cb3823e7cbf43d6120be911dd5e584b8bf5904[m
+Author: ManvithMaddali <113430983+ManvithMaddali@users.noreply.github.com>
+Date:   Fri Nov 18 17:55:29 2022 +0530
+
+    Just added a new Line
+    
+    removed letter in second line
+
+[33mcommit 8afbac84dc9f70e066ccdd740ea51a0ec6c43d53[m
+Author: ManvithMaddali <113430983+ManvithMaddali@users.noreply.github.com>
+Date:   Fri Nov 18 17:52:01 2022 +0530
+
+    Create MyFile
+
+[33mcommit 89e956e3be1a1b7acf9a335185e221121ee79aa1[m[33m ([m[1;32mUnity[m[33m)[m
+Merge: fbe6f3a b3048ee
+Author: Manvith <maddalimanvith@gmail.com>
+Date:   Fri Nov 18 16:50:43 2022 +0530
+
+    Merge branch 'main' of https://github.com/ManvithMaddali/MyFirstGitHubPractice
+
+[33mcommit fbe6f3ae92cd95721a394b5b0a80b2a6e9c95fe1[m
+Author: Manvith <maddalimanvith@gmail.com>
+Date:   Fri Nov 18 16:49:06 2022 +0530
+
+    Movement Script in Unity c#
+
+[33mcommit b3048eec8722d9bea5a78edb76b3c8d8c5d10a5a[m
+Author: ManvithMaddali <113430983+ManvithMaddali@users.noreply.github.com>
+Date:   Fri Nov 18 09:45:32 2022 +0530
+
+    Removed Empty Update Function
+
+[33mcommit 46f18c9259dcbaacec12b9ec7c6d9ec632f0caad[m
+Author: ManvithMaddali <113430983+ManvithMaddali@users.noreply.github.com>
+Date:   Thu Nov 17 16:39:21 2022 +0530
+
+    Add files via upload
