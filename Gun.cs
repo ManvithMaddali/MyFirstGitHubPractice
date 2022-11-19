@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
         {
            GameObject instaBullet= Instantiate(bullet, barrel.transform.position, barrel.transform.rotation);
             instaBullet.GetComponent<Rigidbody>().AddForce(Vector3.back * 500);
-            Destroy(instaBullet, 10f);
+            Destroy(instaBullet, 12f);
         }
     }
 }
