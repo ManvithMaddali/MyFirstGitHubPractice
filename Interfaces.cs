@@ -16,6 +16,11 @@ public class Interfaces : MonoBehaviour
         Debug.Log("Is an SMG");
         Debug.Log("Fires 9mm bullets");
     }
+    public void DLQ33()
+    {
+        Debug.Log("Is an Sniper");
+        Debug.Log("Long Range Weapon");
+    }
     public virtual void Multiply(int x,int y)
     {
         Debug.Log(x + y);
