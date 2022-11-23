@@ -2,46 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayCast : MonoBehaviour
+namespace Manvith
 {
-    public GameObject ground;
-    public float deploymentHeight;
-    public float effectiveness;
-    public GameObject danceAnim;
-    private bool deploy;
-    private Rigidbody rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        danceAnim.GetComponent<Animator>().enabled = false;
-    }
 
-    // Update is called once per frame
-    private void Update()
+
+    public class RayCast : MonoBehaviour
     {
-        Debug.DrawRay(transform.position, Vector3.up);  
-        RaycastHit hit;
-        Ray landingRay = new Ray(transform.position, Vector3.down);
-        if (!deploy)
+        public GameObject ground;
+        public float deploymentHeight;
+        public float effectiveness;
+        public GameObject danceAnim;
+        private bool deploy;
+        private Rigidbody rb;
+        // Start is called before the first frame update
+        void Start()
         {
-            if(Physics.Raycast(landingRay,out hit, deploymentHeight))
+            rb = GetComponent<Rigidbody>();
+            danceAnim.GetComponent<Animator>().enabled = false;
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            Debug.DrawRay(transform.position, Vector3.up);
+            RaycastHit hit;
+            Ray landingRay = new Ray(transform.position, Vector3.down);
+            if (!deploy)
             {
-                if (hit.collider.tag == "Ground")
+                if (Physics.Raycast(landingRay, out hit, deploymentHeight))
                 {
-                    Dance();
+                    if (hit.collider.tag == "Ground")
+                    {
+                        Dance();
+                    }
                 }
             }
         }
-    }
-    void Dance()
-    {
-        deploy = true;
-        rb.drag = effectiveness;
-        danceAnim.GetComponent<Animator>().enabled = true;
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        danceAnim.GetComponent<Animator>().enabled = false;
+        void Dance()
+        {
+            deploy = true;
+            rb.drag = effectiveness;
+            danceAnim.GetComponent<Animator>().enabled = true;
+        }
+        private void OnCollisionEnter(Collision collision)
+        {
+            danceAnim.GetComponent<Animator>().enabled = false;
+        }
     }
 }

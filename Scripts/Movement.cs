@@ -1,38 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manvith;
 
 public class Movement : MonoBehaviour
 {
     public float speed;
-    private Rigidbody rb;
-    public Vector3 forceAmount;
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-    // Start is called before the first frame update
     private void Update()
     {
+        RayCast ray = new RayCast();
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(new Vector3(1,0,0) * speed * Time.deltaTime);
+            transform.Translate(new Vector3(-1,0,0) *speed* Time.deltaTime);
+            transform.Rotate(new Vector3(15, 0, 0) * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(new Vector3(-1,0,0) * speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(new Vector3(0,0,-1) * speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(new Vector3(0,0,1) * speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rb.AddForce(new Vector3(0,1*8,1*4),ForceMode.Acceleration);
+            transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
+            transform.Rotate(new Vector3(-15, 0, 0) * Time.deltaTime);
         }
     }
+
 }
