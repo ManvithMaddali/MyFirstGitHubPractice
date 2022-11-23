@@ -16,3 +16,5 @@ Practice.meta
 textDoccument.txt.meta
 textDocument.txt.meta
 Unity.meta
+*.meta
+Scenes/New Scene.unity
