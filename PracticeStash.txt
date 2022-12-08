@@ -1,6 +1,0 @@
-Hello World!
-Important bugFix
-if(Input.GetKeyDown(KeuCode.Space))
-{
-	Debug.log("Hello");
-}
